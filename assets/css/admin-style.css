@@ -1,0 +1,7 @@
+.vp-wrap .vp-option-panel.fixed-layout {
+    width: 100% !important;
+}
+
+.vp-wrap .vp-copyright {
+    display: none;
+}
