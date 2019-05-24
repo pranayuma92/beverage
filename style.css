@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Pandu Pranayuma
 Author URI: http://underscores.me/
 Description: Official theme for UKMGood member
-Version: 1.1.5
+Version: 1.1.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: beverage
@@ -70,6 +70,7 @@ html {
 
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 
 /**
@@ -1003,7 +1004,8 @@ object {
     letter-spacing: 7px;
 }
 
-body .mid-sec img {
+body .mid-sec img,
+body .simple-view img {
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -1043,4 +1045,31 @@ body .content-product-single img{
 
 #logo a img {
 	height: 50px;
+}
+
+.alignfull {
+	width: 100vw;
+  	position: relative;
+  	left: 50%;
+  	right: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
+}
+
+body .banner-bottom-wthree img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+
+body .banner-bottom-wthree .content-left-bottom {
+	margin: 0;
+}
+
+body .banner-bottom-wthree .content-left-bottom h4 {
+	margin-top: 0;
+}
+
+body .order-sec .order-right-content p {
+	color: #000;
 }
