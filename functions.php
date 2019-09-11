@@ -1,6 +1,6 @@
 <?php
 /**
- * Beverage functions and definitions
+ * Beverage functions and definitions module
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
