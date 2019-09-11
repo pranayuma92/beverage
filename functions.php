@@ -199,6 +199,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+require get_template_directory() . '/module/updater/plugin-update-checker.php';
+$UpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'http://repo.ukmgood.com/beverage.json',
+	__FILE__
+);
+
+//Here's how you can add query arguments to the URL.
+function SecretKey($query){
+	$query['secret'] = 'ukmgood2019!#@';
+	return $query;
+}
+$UpdateChecker->addQueryArgFilter('SecretKey');
+
 //Declared clasess
 require_once __DIR__ . '/module/ExtendedFunction.php';
 

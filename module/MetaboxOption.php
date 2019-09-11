@@ -166,7 +166,7 @@ class MetaboxOption {
 		return array(
 		    'title' => __('Theme Settings | by UKMGood', 'beverage'),
 		    'logo'  => get_template_directory_uri() .  '/assets/images/ukmgood.png',
-		    'menus' => array(
+		    'menus' => apply_filters('ug_option_array', array(
 		        array(
 			        'title' => __('Contact Details', 'beverage'),
 			        'icon' => 'font-awesome:fa-user',
@@ -378,8 +378,8 @@ class MetaboxOption {
 					        'format' => 'hex',
 					    ),
 			        )
-			    ),
-		    ),
+			    )
+		    ))
 		);
 	}
 }
